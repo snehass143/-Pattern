@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Pattern</title>
+</head>
+<body>
+  <p id="output"></p>
+
+  <script>
+   // Define the size of the pattern
+const a = 5;
+
+// Generate the pattern
+let pattern = '';
+for (let i = 0; i < a; i++) {
+  for (let j = 0; j <= i; j++) {
+    pattern += '* ';
+  }
+  pattern += '<br>'; // Add a line break after each row
+}
+
+// Display the pattern in the browser
+document.getElementById('output').innerHTML = pattern;
+
+  </script>
+</body>
+</html>
